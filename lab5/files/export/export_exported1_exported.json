@@ -1,0 +1,191 @@
+[
+    {
+        "id": "1",
+        "img_path": "pic\/goods\/accessoryDEFENDER1.webp",
+        "name": "\u0421\u0443\u043c\u043a\u0430 \u0434\u043b\u044f \u043d\u043e\u0443\u0442\u0431\u0443\u043a\u0430 Defender 26084",
+        "id_category": "3",
+        "id_brand": "4",
+        "description": "15.6\", \u043f\u043e\u043b\u0438\u044d\u0441\u0442\u0435\u0440, \u0447\u0435\u0440\u043d\u0430\u044f",
+        "price": "960"
+    },
+    {
+        "id": "2",
+        "img_path": "pic\/goods\/accessoryLENOVO1.webp",
+        "name": "\u041a\u0440\u0435\u043f\u043b\u0435\u043d\u0438\u0435 Lenovo Tiny VESA Mount II",
+        "id_category": "3",
+        "id_brand": "7",
+        "description": "\u041a\u0440\u0435\u043f\u043b\u0435\u043d\u0438\u0435 \u043d\u0430 \u043c\u043e\u043d\u0438\u0442\u043e\u0440, \u0414\u043b\u044f \u043f\u043a, \u041c\u0435\u0442\u0430\u043b\u043b, \u0427\u0435\u0440\u043d\u0430\u044f",
+        "price": "2388"
+    },
+    {
+        "id": "3",
+        "img_path": "pic\/goods\/computerACER1.webp",
+        "name": "\u0420\u0430\u0431\u043e\u0447\u0430\u044f \u0441\u0442\u0430\u043d\u0446\u0438\u044f Acer Altos P10 F8 20L Tower",
+        "id_category": "1",
+        "id_brand": "1",
+        "description": "Intel Core i7 12700 (12\/20; 2,1GHz; 25MB)\/16GB\/512 \u0413\u0431 SSD nVidia Quadro T10008\u0413\u0431\/mouse\/500W\/noOS\/\u0447\u0435\u0440\u043d\u044b\u0439",
+        "price": "149094"
+    },
+    {
+        "id": "4",
+        "img_path": "pic\/goods\/computerX1.webp",
+        "name": "\u041a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 X-Computers *Gamer Advanced*",
+        "id_category": "1",
+        "id_brand": "10",
+        "description": "Intel Core i5 12400F (6\/12; 2,5GHz; 18MB)\/16GB\/512 \u0413\u0431 SSD nVidia GeForce RTX 306012\u0413\u0431\/GbitEth\/WiFi\/BT\/600W\/noOS\/\u0447\u0435\u0440\u043d\u044b\u0439",
+        "price": "91281"
+    },
+    {
+        "id": "5",
+        "img_path": "pic\/goods\/computerX2.webp",
+        "name": "\u041a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 X-Computers *X-Special*",
+        "id_category": "1",
+        "id_brand": "10",
+        "description": "Intel Core i5 12500 (6\/12; 3GHz; 18MB)\/32GB\/512 \u0413\u0431 SSD\/Intel UHD Graphics 770 \/GbitEth\/600W\/noOS\/\u0447\u0435\u0440\u043d\u044b\u0439",
+        "price": "49900"
+    },
+    {
+        "id": "6",
+        "img_path": "pic\/goods\/CPU_AMD1.webp",
+        "name": "\u041f\u0440\u043e\u0446\u0435\u0441\u0441\u043e\u0440 AMD Ryzen 5 5600G",
+        "id_category": "6",
+        "id_brand": "3",
+        "description": "Cezanne 6C\/12T 3.9GHz-4.4GHz (AM4, 16MB L3, 7nm) DIMM DDR4",
+        "price": "13549"
+    },
+    {
+        "id": "7",
+        "img_path": "pic\/goods\/CPU_AMD2.webp",
+        "name": "\u041f\u0440\u043e\u0446\u0435\u0441\u0441\u043e\u0440 AMD RYZEN X8 R7-7700 \u0432 \u0412\u043e\u043b\u0433\u043e\u0433\u0440\u0430\u0434\u0435",
+        "id_category": "6",
+        "id_brand": "3",
+        "description": "Raphael AM5 8C\/16T 3.8GHz-5.3GHz (AM5, 32MB L3, 5nm) DIMM DDR5 ECC",
+        "price": "26832"
+    },
+    {
+        "id": "8",
+        "img_path": "pic\/goods\/CPU_INTEL1.webp",
+        "name": "\u041f\u0440\u043e\u0446\u0435\u0441\u0441\u043e\u0440 Intel Core i5-12400",
+        "id_category": "6",
+        "id_brand": "6",
+        "description": "Alder Lake-S 6C\/12T 2.5GHz-4.4GHz (LGA1700, 18MB L3, 10nm) DIMM DDR5, DIMM DDR4",
+        "price": "14571"
+    },
+    {
+        "id": "9",
+        "img_path": "pic\/goods\/CPU_INTEL2.webp",
+        "name": "\u041f\u0440\u043e\u0446\u0435\u0441\u0441\u043e\u0440 Intel Core i3-10100",
+        "id_category": "6",
+        "id_brand": "6",
+        "description": "Comet Lake 4C\/8T 3.6GHz-4.3GHz (LGA1200, 6MB L3, 14nm) DIMM DDR4",
+        "price": "10795"
+    },
+    {
+        "id": "10",
+        "img_path": "pic\/goods\/laptopACER1.webp",
+        "name": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a Acer Travel Mate P2 TMP214-53",
+        "id_category": "2",
+        "id_brand": "1",
+        "description": "Core i5 1135G7\/16 \u0413\u0431\/512 \u0413\u0431 SSD\/Iris Xe Graphics\/14\" Full HD (1920 x 1080) IPS\/BT\/WiFi\/cam\/\u0431\u0435\u0437 \u041e\u0421\/\u0447\u0435\u0440\u043d\u044b\u0439",
+        "price": "57677"
+    },
+    {
+        "id": "11",
+        "img_path": "pic\/goods\/laptopLENOVO1.webp",
+        "name": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a Lenovo ThinkBook 13s Gen 2",
+        "id_category": "2",
+        "id_brand": "7",
+        "description": "Core i7 1165G7\/16 \u0413\u0431\/512 \u0413\u0431 SSD\/Iris Xe Graphics\/13.3\" 2K (2560 x 1600) IPS\/BT\/WiFi\/cam\/Win11Pro\/\u0441\u0435\u0440\u044b\u0439",
+        "price": "109091"
+    },
+    {
+        "id": "12",
+        "img_path": "pic\/goods\/laptopLENOVO2.webp",
+        "name": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a Lenovo IdeaPad Slim 3 16IAH8",
+        "id_category": "2",
+        "id_brand": "7",
+        "description": "Core i5 12450H\/16 \u0413\u0431\/512 \u0413\u0431 SSD\/UHD Graphics\/16\" Full HD (1920 x 1200) IPS\/BT\/WiFi\/cam\/\u0431\u0435\u0437 \u041e\u0421\/\u0441\u0435\u0440\u044b\u0439",
+        "price": "59660"
+    },
+    {
+        "id": "13",
+        "img_path": "pic\/goods\/laptopMSI1.webp",
+        "name": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a MSI GF63 Thin 12UC-1036XRU",
+        "id_category": "2",
+        "id_brand": "8",
+        "description": "Core i5 12450H\/16 \u0413\u0431\/512 \u0413\u0431 SSD\/GeForce RTX 3050 4 \u0413\u0431\/15.6\" Full HD (1920 x 1080) IPS\/BT\/WiFi\/cam\/\u0431\u0435\u0437 \u041e\u0421\/\u0447\u0435\u0440\u043d\u044b\u0439",
+        "price": "81795"
+    },
+    {
+        "id": "14",
+        "img_path": "pic\/goods\/SSD_ADATA1.webp",
+        "name": "\u041d\u0430\u043a\u043e\u043f\u0438\u0442\u0435\u043b\u044c SSD M.2 2280 ADATA ALEG-960M-1TCS",
+        "id_category": "4",
+        "id_brand": "2",
+        "description": "1000 \u0413\u0411, PCIe 4.0 x4 \u041c.2 2280, TLC, 7400 \u041c\u0431\/\u0441, 6000 \u041c\u0431\/\u0441, 780 TBW",
+        "price": "10634"
+    },
+    {
+        "id": "15",
+        "img_path": "pic\/goods\/SSD_ADATA2.webp",
+        "name": "\u041d\u0430\u043a\u043e\u043f\u0438\u0442\u0435\u043b\u044c SSD 2.5' ADATA ASU650SS-256GT-R",
+        "id_category": "4",
+        "id_brand": "2",
+        "description": "256 \u0413\u0411, SATA III 2.5\", TLC, 520 \u041c\u0431\/\u0441, 450 \u041c\u0431\/\u0441, 140 TBW",
+        "price": "2067"
+    },
+    {
+        "id": "16",
+        "img_path": "pic\/goods\/SSD_AMD1.webp",
+        "name": "\u041d\u0430\u043a\u043e\u043f\u0438\u0442\u0435\u043b\u044c SSD 2.5' AMD R5SL120G",
+        "id_category": "4",
+        "id_brand": "3",
+        "description": "Radeon R5 120GB TLC 3D NAND SATA 6Gb\/s 544\/349MB\/s 7mm RTL",
+        "price": "1465"
+    },
+    {
+        "id": "17",
+        "img_path": "pic\/goods\/SSD_INTEL1.webp",
+        "name": "\u041d\u0430\u043a\u043e\u043f\u0438\u0442\u0435\u043b\u044c SSD 2.5' Intel SSDSC2KB960G801",
+        "id_category": "4",
+        "id_brand": "6",
+        "description": "D3-S4510 960GB TLC 3D2 SATA 6Gb\/s 560\/510MB\/s 95K\/36K IOPS 7mm Single Pack",
+        "price": "20675"
+    },
+    {
+        "id": "18",
+        "img_path": "pic\/goods\/videocardACER1.webp",
+        "name": "\u0412\u0438\u0434\u0435\u043e\u043a\u0430\u0440\u0442\u0430 PCI-E Acer Radeon RX 7800 XT Nitro OC",
+        "id_category": "5",
+        "id_brand": "1",
+        "description": "16384\u041c\u0431\/GDDR6\/256\u0431\u0438\u0442\/19500\u041c\u0413\u0446\/5\u043d\u043c\/1295\u041c\u0413\u0446\/PCI-E x16",
+        "price": "64085"
+    },
+    {
+        "id": "19",
+        "img_path": "pic\/goods\/videocardGIGABYTE1.webp",
+        "name": "\u0412\u0438\u0434\u0435\u043e\u043a\u0430\u0440\u0442\u0430 PCI-E GIGABYTE GeForce RTX 3060 WINDFOR",
+        "id_category": "5",
+        "id_brand": "5",
+        "description": "12288\u041c\u0431\/GDDR6\/192\u0431\u0438\u0442\/15000\u041c\u0413\u0446\/8\u043d\u043c\/1320\u041c\u0413\u0446\/PCI-E x16",
+        "price": "34467"
+    },
+    {
+        "id": "20",
+        "img_path": "pic\/goods\/videocardGIGABYTE2.webp",
+        "name": "\u0412\u0438\u0434\u0435\u043e\u043a\u0430\u0440\u0442\u0430 PCI-E GIGABYTE GeForce RTX 4060 WINDFOR",
+        "id_category": "5",
+        "id_brand": "5",
+        "description": "8192\u041c\u0431\/GDDR6\/128\u0431\u0438\u0442\/17000\u041c\u0413\u0446\/4\u043d\u043c\/1830\u041c\u0413\u0446\/PCI-E x8",
+        "price": "39356"
+    },
+    {
+        "id": "21",
+        "img_path": "pic\/goods\/videocardMSI1.webp",
+        "name": "\u0412\u0438\u0434\u0435\u043e\u043a\u0430\u0440\u0442\u0430 PCI-E MSI GeForce RTX 3050 VENTUS 2X XS",
+        "id_category": "5",
+        "id_brand": "8",
+        "description": "8192\u041c\u0431\/GDDR6\/128\u0431\u0438\u0442\/14000\u041c\u0413\u0446\/8\u043d\u043c\/1552\u041c\u0413\u0446\/PCI-E x8",
+        "price": "30430"
+    }
+]

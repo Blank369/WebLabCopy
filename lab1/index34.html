@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap-5.3.3/bootstrap.css" rel="stylesheet">
+    <title>Интернет-магазин XCOP-SHOP</title>
+    <link rel="icon" href= "pic/icons/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<div class="header">
+    <div class="lang-navbar">
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="nav">
+                <aside class="col-md-2">
+                    <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#citiesModal">
+                        <img src="pic/icons/icon_pin.svg" width="20" height="20" alt="icon_pin">
+                        Волгоград                
+                        <img src="pic/icons/icon_open_selection_2.svg" width="10" height="6" alt="icon_arrow_down">
+                    </button>
+                      
+                    <div class="modal fade" id="citiesModal" tabindex="-1" aria-labelledby="CitiesModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">Выберите город</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="input-group">
+                                    <input class="form-control" type="text" placeholder="Введите название города" aria-label="пример ввода по умолчанию">
+                                </div>
+
+                            <div class="container text-center" id="listOfCities">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <a class="selectCity" href="#">
+                                            <img src="pic/icons/geo_blue.svg" width="20" height="20" alt="icon_pin">Москва
+                                        </a> 
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="selectCity" href="#">
+                                            <img src="pic/icons/geo_blue.svg" width="20" height="20" alt="icon_pin">Нижний Новгород
+                                        </a> 
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="selectCity" href="#">
+                                            <img src="pic/icons/geo_blue.svg" width="20" height="20" alt="icon_pin">Самара
+                                        </a> 
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <a class="selectCity" href="#">
+                                            <img src="pic/icons/geo_blue.svg" width="20" height="20" alt="icon_pin">Санкт-Петербург
+                                        </a> 
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="selectCity" href="#">
+                                            <img src="pic/icons/geo_blue.svg" width="20" height="20" alt="icon_pin">Волгоград
+                                        </a> 
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="selectCity" href="#">
+                                            <img src="pic/icons/geo_blue.svg" width="20" height="20" alt="icon_pin">Уфа
+                                        </a> 
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <a class="selectCity" href="#">
+                                            <img src="pic/icons/geo_blue.svg" width="20" height="20" alt="icon_pin">Новосибирск
+                                        </a> 
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="selectCity" href="#">
+                                            <img src="pic/icons/geo_blue.svg" width="20" height="20" alt="icon_pin">Воронеж
+                                        </a> 
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="selectCity" href="#">
+                                            <img src="pic/icons/geo_blue.svg" width="20" height="20" alt="icon_pin">Челябинск
+                                        </a> 
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <a class="selectCity" href="#">
+                                            <img src="pic/icons/geo_blue.svg" width="20" height="20" alt="icon_pin">Екатеринбург
+                                        </a> 
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="selectCity" href="#">
+                                            <img src="pic/icons/geo_blue.svg" width="20" height="20" alt="icon_pin">Пермь
+                                        </a> 
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="selectCity" href="#">
+                                            <img src="pic/icons/geo_blue.svg" width="20" height="20" alt="icon_pin">Омск
+                                        </a> 
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <a class="selectCity" href="#">
+                                            <img src="pic/icons/geo_blue.svg" width="20" height="20" alt="icon_pin">Казань
+                                        </a> 
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="selectCity" href="#">
+                                            <img src="pic/icons/geo_blue.svg" width="20" height="20" alt="icon_pin">Ростов-на-Дону
+                                        </a> 
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="selectCity" href="#">
+                                            <img src="pic/icons/geo_blue.svg" width="20" height="20" alt="icon_pin">Красноярск
+                                        </a> 
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="d-flex p-2"><h4>А</h4></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <a class="selectCity" href="#">
+                                            <img src="pic/icons/geo_blue.svg" width="20" height="20" alt="icon_pin">Архангельск
+                                        </a> 
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="selectCity" href="#">
+                                            <img src="pic/icons/geo_blue.svg" width="20" height="20" alt="icon_pin">Абакан
+                                        </a> 
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="selectCity" href="#">
+                                            <img src="pic/icons/geo_blue.svg" width="20" height="20" alt="icon_pin">Астрахань
+                                        </a> 
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <a class="selectCity" href="#">
+                                            <img src="pic/icons/geo_blue.svg" width="20" height="20" alt="icon_pin">Альметьевск
+                                        </a> 
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="selectCity" href="#">
+                                            <img src="pic/icons/geo_blue.svg" width="20" height="20" alt="icon_pin">Армавир
+                                        </a> 
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="col-md-10 sidebar">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link disabled">
+                            <img src="pic/icons/icon_clock.svg" width="20" height="20" alt="icon_clock">
+                            Режим работы: 9:00 — 21:00
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            <img src="pic/icons/icon_phone.svg" class="site_header__icon--default" width="20" height="20" alt="icon_phone">
+                            +7 495 799-96-69
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="pic/icons/icon_phone-2_black.svg" class="site_header__icon--default" width="20" height="20" alt="icon_phone-2_black">
+                            <span>Заказать звонок</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="pic/icons/icon_chat_black_2.svg" class="site_header__icon--default" width="20" height="20" alt="icon_chat">
+                            <span>Отправить запрос</span>
+                        </a>
+                    </li>
+                </ul>
+                </aside>
+            </div>
+        </nav>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <ul class="nav justify-content-between">
+            <li class="nav-item">
+                <img src="pic/icons/xcomshop-logo-main-middle.svg" alt="XCOM" width="148" height="44">
+            </li>
+            <li class="nav-item">
+                <button type="button" class="btn btn-primary" data-bs-toggle="button">
+                    <img class="icon2" src="pic/icons/icon_all_catalog2.svg">
+                    Каталог
+                  </button>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Поиск по каталогу" aria-label="Каталог" aria-describedby="button-addon2">
+                    <button class="btn" type="button" id="button-addon2">
+                      <img class="icon2" src="pic/icons/icon-search.svg">
+                  </button>
+                </div>
+
+            </li>
+            <div class="d-flex">
+            <li class="nav-item">
+                <button type="button" class="btn ">
+                    <img class="icon2" src="pic/icons/heart-icon.svg">
+                    Избранное
+                    </button>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="btn">
+                    <img class="icon2" src="pic/icons/compare-icon.svg">
+                    Сравнение
+                    </button>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="btn">
+                    <img class="icon2" src="pic/icons/cart-icon.svg">
+                    Корзина
+                    </button>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="btn">
+                    <img class="icon2" src="pic/icons/avatar-icon.svg">
+                    Войти
+                </button>
+            </li>
+            </div>
+        </ul>
+    </div>
+
+    <div class="goods-navbar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <img class="icon2" src="pic/icons/promo-icon.svg">
+                        Акции </a>
+                </li>
+                <li class="nav-item">   
+                    <a class="nav-link active" href="#">
+                    <img class="icon2" src="pic/icons/percent-icon.svg">
+                    Распродажа</a>
+                </li>
+                </ul>
+            </div>
+
+            <div class="col-9">
+            <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                <img class="icon2" src="pic/icons/icon-about.svg">
+                О нас</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">
+                <img class="icon2" src="pic/icons/icon-contacts.svg">
+                Контакты</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">
+                <img class="icon2" src="pic/icons/icon-wallet.svg">
+                Оплата</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">
+                <img class="icon2" src="pic/icons/icon-shield.svg">
+                Гарантия</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">
+                <img class="icon2" src="pic/icons/icon-delivery.svg">
+                Доставка</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">
+                <img class="icon2" src="pic/icons/icon-services.svg">
+                Услуги</a>
+            </li>
+            <li class="nav-item"> 
+                <a class="nav-link">
+                <img class="icon2" src="pic/icons/icon-portfolio.svg">
+                Корпоративным клиентам</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                  <img class="icon2" src="pic/icons/icon_menu.svg">
+                  Меню</a>
+                <ul class="dropdown-menu">
+                    <li class="nav-item"> 
+                      <a class="dropdown-item">
+                        <img class="icon2" src="pic/icons/icon-leasing.svg">
+                        Лизинг</a></li>
+                    <li class="nav-item">
+                    <a class="dropdown-item" href="#">
+                      <img class="icon2" src="pic/icons/consultation-new-icon.svg">
+                    Консультационный центр</a></li>
+                    <li class="nav-item">
+                      <a class="dropdown-item" href="#">
+                        <img class="icon2" src="pic/icons/icon-supply.svg">
+                      Поставщикам</a></li>
+                </ul>
+              </li>
+
+
+            </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main py-5">
+
+    <div class="floating-button">
+        <a href="#">
+            <img src="pic/icons/icon-chat.svg">
+        </a>
+        <span class="tooltip-text">Начать чат</span>
+    </div>
+
+    <div class="container-fluid" id="promotions">
+        <div id="carouselPromotions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 11"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="pic/promotions/prom1.jpg" class="d-block w-100" alt="slide_1">
+            </div>
+            <div class="carousel-item">
+              <img src="pic/promotions/prom2.webp" class="d-block w-100" alt="slide_2">
+            </div>
+            <div class="carousel-item">
+              <img src="pic/promotions/prom3.jpg" class="d-block w-100" alt="slide_3">
+            </div>
+            <div class="carousel-item">
+              <img src="pic/promotions/prom4.webp" class="d-block w-100" alt="slide_4">
+            </div>
+            <div class="carousel-item">
+              <img src="pic/promotions/prom5.webp" class="d-block w-100" alt="slide_5">
+            </div>
+            <div class="carousel-item">
+              <img src="pic/promotions/prom6.webp" class="d-block w-100" alt="slide_6">
+            </div>
+            <div class="carousel-item">
+              <img src="pic/promotions/prom7.webp" class="d-block w-100" alt="slide_7">
+            </div>
+            <div class="carousel-item">
+              <img src="pic/promotions/prom8.webp" class="d-block w-100" alt="slide_8">
+            </div>
+            <div class="carousel-item">
+              <img src="pic/promotions/prom9.webp" class="d-block w-100" alt="slide_9">
+            </div>
+            <div class="carousel-item">
+              <img src="pic/promotions/prom10.webp" class="d-block w-100" alt="slide_10">
+            </div>
+            <div class="carousel-item">
+              <img src="pic/promotions/prom11.webp" class="d-block w-100" alt="slide_11">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselPromotions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselPromotions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+          </button>
+          <h6> Интернет-магазин компьютеров и компьютерных комплектующих </h6>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="popular-categories">
+
+        <h3> Популярные категории </h3>
+
+        <div id="carouselPopular" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card-deck">
+                        <div class="card">
+                            <img src="pic/popular/Frame1.webp" class="card-img-top" alt="card-1">
+                            <div class="card-body">
+                                <p class="card-text">Ноутбуки</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="pic/popular/Frame2.png" class="card-img-top" alt="card-2">
+                            <div class="card-body">
+                                <p class="card-text">Смартфоны</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="pic/popular/Frame3.png" class="card-img-top" alt="card-3">
+                            <div class="card-body">
+                                <p class="card-text">SSD напители</p>
+                            </div>
+                        </div>  
+                        <div class="card">
+                            <img src="pic/popular/Frame4.png" class="card-img-top" alt="card-3">
+                            <div class="card-body">
+                                <p class="card-text">Мониторы</p>
+                            </div>
+                        </div>  
+                        <div class="card">
+                            <img src="pic/popular/Frame5.png" class="card-img-top" alt="card-3">
+                            <div class="card-body">
+                                <p class="card-text">МФУ</p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-deck">
+                        <div class="card">
+                            <img src="pic/popular/Frame6.png" class="card-img-top" alt="card-3">
+                            <div class="card-body">
+                                <p class="card-text">Материнские платы</p>
+                            </div>
+                        </div>  
+                        <div class="card">
+                            <img src="pic/popular/Frame7.png" class="card-img-top" alt="card-3">
+                            <div class="card-body">
+                                <p class="card-text">Процессоры</p>
+                            </div>
+                        </div>  
+                        <div class="card">
+                            <img src="pic/popular/Frame8.png" class="card-img-top" alt="card-3">
+                            <div class="card-body">
+                                <p class="card-text">Модули памяти</p>
+                            </div>
+                        </div>  
+                        <div class="card">
+                            <img src="pic/popular/Frame9.png" class="card-img-top" alt="card-3">
+                            <div class="card-body">
+                                <p class="card-text">Apple</p>
+                            </div>
+                        </div>  
+                        <div class="card">
+                            <img src="pic/popular/Frame10.png" class="card-img-top" alt="card-3">
+                            <div class="card-body">
+                                <p class="card-text">Корпуса для ПК</p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-deck">
+                        <div class="card">
+                            <img src="pic/popular/Frame11.png" class="card-img-top" alt="card-3">
+                            <div class="card-body">
+                                <p class="card-text">Кабели</p>
+                            </div>
+                        </div>  
+                        <div class="card">
+                            <img src="pic/popular/Frame12.png" class="card-img-top" alt="card-3">
+                            <div class="card-body">
+                                <p class="card-text">ИБП</p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" data-bs-target="#carouselPopular" role="button" data-bs-slide  ="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </a>
+            <a class="carousel-control-next" data-bs-target="#carouselPopular" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="recommended-purchase">
+
+        <h3> Рекомендуем приобрести </h3>
+        
+        <div id="recommendations" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card-deck">
+                        <div class="card">
+                            <img src="pic/recommendations/rec1.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Накопитель SSD 2.5''</p>
+                                <h5 class="card-title">Samsung MZ-77E500BW</h5>
+                                <p>870 EVO 500GB SATA 6Gb/s V-NAND 3bit MLC 560/530MB/s IOPS 98K/88K MTBF 1.5M</p>
+                                <div class="card-footer">
+                                    <p class="price">6039 ₽</p>
+                                    <button type="button" class="btn btn-outline-primary ">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="pic/recommendations/rec2.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Переключатель KVM</p>
+                                <h5 class="card-title">Planet IKVM-210-08M</h5>
+                                <p>17" 8-Port Combo VGA LCD IP KVM Switch</p>
+                                <div class="card-footer">
+                                    <p class="price">156 240 ₽</p>
+                                    <button type="button" class="btn btn-outline-primary buy">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="pic/recommendations/rec3.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Клавиатура</p>
+                                <h5 class="card-title">Logitech K120</h5>
+                                <p>черная, USB</p>
+                                <div class="card-footer">
+                                    <p class="price">1 550 ₽</p>
+                                    <button type="button" class="btn btn-outline-primary">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="pic/recommendations/rec4.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Накопитель SSD M.2 2280</p>
+                                <h5 class="card-title">Samsung MZ-V8P1T0BW</h5>
+                                <p>980 PRO 1TB PCIe Gen 4.0 x4 NVMe V-NAND 3-bit MLC 7000/5000MB/s IOPs 1000K/1000K MTBF 1.5M</p>
+                                <div class="card-footer">
+                                    <p class="price">12 914 ₽</p>
+                                    <button type="button" class="btn btn-outline-primary">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="pic/recommendations/rec5.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Полотенце</p>
+                                <h5 class="card-title">Filum CLN2330-50</h5>
+                                <p>универсальные Casa в рулоне 23х30, 50 листов</p>
+                                <div class="card-footer">
+                                    <p class="price">299 ₽</p>
+                                    <button type="button" class="btn btn-outline-primary">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="pic/recommendations/rec6.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Пневматический очиститель</p>
+                                    <h5 class="card-title">Filum Aero FL-CLN-Air520F</h5>
+                                    <p>для удаления загрязнений с труднодоступных мест и деликатных поверхностей, негорючий, инверторный. 520 мл</p>
+                                    <div class="card-footer">
+                                        <p class="price">549 ₽</p>
+                                        <button type="button" class="btn btn-outline-primary">В корзину</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-deck">
+                        <div class="card">
+                            <img src="pic/recommendations/rec7.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-body-secondary">МФУ лазерное черно-белое</p>
+                                <h5 class="card-title">Kyocera ECOSYS M2040dn</h5>
+                                <p>А4, 40 ppm, 1200 dpi, 512 Mb, USB 2.0, Network, цв. сканер, DADF, тонер</p>
+                                <div class="card-footer">
+                                    <p class="price">91 000 ₽</p>
+                                    <button type="button" class="btn btn-outline-primary">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="pic/recommendations/rec8.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Процессор</p>
+                                <h5 class="card-title">Intel Core i5-12400</h5>
+                                <p>Alder Lake 6C/12T 2.5-4.4GHz (LGA1700, L3 18MB, 7nm, UHD graphics 730 1.45GHz, TDP 65W) SRL5Y OEM</p>
+                                <div class="card-footer">
+                                    <p class="price">14 650 ₽</p>
+                                    <button type="button" class="btn btn-outline-primary">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" data-bs-target="#recommendations" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </a>
+            <a class="carousel-control-next" data-bs-target="#recommendations" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+            </a>
+        </div>          
+    </div>
+
+    <div class="container-fluid" id="Configurators">
+        <div class="d-flex">
+            <div class="p-2 flex-grow-1"> 
+                <h3>Конфигураторы</h3>
+            </div>
+            <div class="p-2">
+                <a href="#"> 
+                    Все конфигураторы
+                    <img class="icon2" src="pic/icons/icon_right_arrow_carousel.svg">
+                </a>
+            </div>
+        </div>
+        
+        <div id="carouselConfigurators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card-deck">
+                        <div class="card">
+                            <img src="pic/configuration/conf1.png" class="card-img-top" alt="card-1">
+                            <div class="card-body">
+                                <p class="card-text">Конфигуратор компьютеров</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="pic/configuration/conf2.webp" class="card-img-top" alt="card-2">
+                            <div class="card-body">
+                                <p class="card-text">Подбор батарей для ИБП</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="pic/configuration/conf3.png" class="card-img-top" alt="card-3">
+                            <div class="card-body">
+                                <p class="card-text">Аналоговое видеонаблюдение в коттедж</p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-deck">
+                        <div class="card">
+                            <img src="pic/configuration/conf4.png" class="card-img-top" alt="card-3">
+                            <div class="card-body">
+                                <p class="card-text">Подбор материалов для оргтехники</p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>        
+            </div>  
+            <a class="carousel-control-prev" data-bs-target="#carouselConfigurators" role="button" data-bs-slide  ="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </a>
+            <a class="carousel-control-next" data-bs-target="#carouselConfigurators" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="News">
+        <div class="d-flex">
+            <div class="p-2 flex-grow-1"> 
+                <h3>Новости</h3>
+            </div>
+            <div class="p-2">
+                <a href="#"> 
+                    Все новости
+                    <img class="icon2" src="pic/icons/icon_right_arrow_carousel.svg">
+                </a>
+            </div>
+        </div>
+        
+        <div id="carouselNews" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card-deck">
+                        <div class="card">
+                            <img src="pic/news/new1.webp" class="card-img-top">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-body-secondary">25.04.2024</p>
+                                <h5 class="card-title">Скидки до 30% на велосипеды с электродвигателем <a href="#">Velos</a></h5>
+                                <div class="card-footer">
+                                    <div class="ReadMore">
+                                        <a href="#"> 
+                                            Читать далее
+                                        </a>
+                                    </div>
+                                    <a class="tags">Velos</a>
+                                    <a class="tags">акции</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="pic/news/new2.webp" class="card-img-top">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-body-secondary">23.09.2024</p>
+                                <h5 class="card-title">Обновленные ультрабуки Lenovo Xiaoxin Pro14 и Pro16 получили процессоры Intel Core Ultra, OLED-дисплеи и более емкие АКБ.</h5>
+                                <div class="card-footer">
+                                    <div class="ReadMore">
+                                        <a href="#"> 
+                                            Читать далее
+                                        </a>
+                                    </div>
+                                    <a class="tags">Lenovo</a>
+                                    <a class="tags">ноутбуки</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="pic/news/new3.webp" class="card-img-top">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-body-secondary">20.09.2024</p>
+                                <h5 class="card-title">32-дюймовый монитор <a href="#">BenQ GW3290QT</a>получил IPS-матрицу, эргономичную подставку и 4 USB-порта.</h5>
+                                <div class="card-footer">
+                                    <div class="ReadMore">
+                                        <a href="#"> 
+                                            Читать далее
+                                        </a>
+                                    </div>
+                                    <a class="tags">BenQ</a>
+                                    <a class="tags">мониторы</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="pic/news/new4.webp" class="card-img-top">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-body-secondary">19.09.2024</p>
+                                <h5 class="card-title">Новая акция: <a href="#">скидка 25%</a> на высокопрочные настенные шкафы Estap по промокоду.</h5>
+                                <div class="card-footer">
+                                    <div class="ReadMore">
+                                        <a href="#"> 
+                                            Читать далее
+                                        </a>
+                                    </div>
+                                    <a class="tags">Акции</a>
+                                    <a class="tags">шкафы</a>
+                                    <a class="tags">Estap</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="pic/news/new5.webp" class="card-img-top">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-body-secondary">19.09.2024</p>
+                                <h5 class="card-title">Модульный БП <a href="#">XPG CORE REACTOR II VE 650 Вт</a> получил сертификат 80 Plus Gold и разъем 12V-2x6 для новых видеокарт.</h5>
+                                <div class="card-footer">
+                                    <div class="ReadMore">
+                                        <a href="#"> 
+                                            Читать далее
+                                        </a>
+                                    </div>
+                                    <a class="tags">XPG</a>
+                                    <a class="tags">ADATA</a>
+                                    <a class="tags">блоки питания</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-deck">
+                        <div class="card">
+                            <img src="pic/news/new6.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-body-secondary">13.09.2024</p>
+                                <h5 class="card-title">Ноутбуки Lenovo ThinkBook 16 G6 IRL доступны в версиях <a href="#">21KH00JTAK</a> с Core i3-1315U и <a href="#">21KH00B6AU</a> с Core i5-1335U.</h5>
+                                <div class="card-footer">
+                                    <div class="ReadMore">
+                                        <a href="#"> 
+                                            Читать далее
+                                        </a>
+                                    </div>
+                                    <a class="tags">Lenovo</a>
+                                    <a class="tags">ноутбуки</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="pic/news/new7.webp" class="card-img-top">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-body-secondary">11.09.2024</p>
+                                <h5 class="card-title">Новый смартфон OPPO RENO 12F доступен в версиях <a href="#">8/256 ГБ зеленый</a>, <a href="#">8/512 ГБ зеленый</a> и <a href="#">8/512 ГБ серый</a>.</h5>
+                                <div class="card-footer">
+                                    <div class="ReadMore">
+                                        <a href="#"> 
+                                            Читать далее
+                                        </a>
+                                    </div>
+                                    <a class="tags">OPPO</a>
+                                    <a class="tags">смартфоны</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="pic/news/new8.webp" class="card-img-top">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-body-secondary">06.09.2024</p>
+                                <h5 class="card-title">Новая акция: <a href="#">скидки 10%</a> на скидка на SSD ADATA XPG.</h5>
+                                <div class="card-footer">
+                                    <div class="ReadMore">
+                                        <a href="#"> 
+                                            Читать далее
+                                        </a>
+                                    </div>
+                                    <a class="tags">Акции</a>
+                                    <a class="tags">скидки</a>
+                                    <a class="tags">ADATA</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="pic/news/new9.webp" class="card-img-top">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-body-secondary">04.09.2024</p>
+                                <h5 class="card-title">Инжектор PoE OSNOVO Midspan-2/602G оснащен двумя портами Gigabit Ethernet и способен передать до 60 Вт.</h5>
+                                <div class="card-footer">
+                                    <div class="ReadMore">
+                                        <a href="#"> 
+                                            Читать далее
+                                        </a>
+                                    </div>
+                                    <a class="tags">OSNOVO</a>
+                                    <a class="tags">инжекторы</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="pic/news/new10.webp" class="card-img-top">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-body-secondary">03.09.2024</p>
+                                <h5 class="card-title">Новая акция: <a href="#">скидки 10%</a> на внешние накопители Transcend по промокоду.</h5>
+                                <div class="card-footer">
+                                    <div class="ReadMore">
+                                        <a href="#"> 
+                                            Читать далее
+                                        </a>
+                                    </div>
+                                    <a class="tags">Акции</a>
+                                    <a class="tags">скидки</a>
+                                    <a class="tags">Transcend</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" data-bs-target="#carouselNews" role="button" data-bs-slide  ="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </a>
+            <a class="carousel-control-next" data-bs-target="#carouselNews" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+            </a>
+        </div>
+    </div>
+
+
+</div>  
+
+<footer>
+    <div class="row">
+        <div class="col-4">
+            <h5>Офис м. Водный стадион</h5>
+            <p>г. Москва, ул. Выборгская, 22 стр. 3</p>
+
+            <h5>Офис Долгопрудный</h5>
+            <p>г. Долгопрудный, Транспортный проезд, 6а</p>
+
+            <h5>Офис Санкт‑Петербург</h5>
+            <p>г. Санкт‑Петербург, ул. Магнитогорская, 30 лит А</p>
+        </div>
+        <div class="col-2">
+            <h5>Оформление заказа</h5>
+            <a href="#">+7 (495) 799-96-69</a>
+            <a href="#">+7 (812) 740-11-10</a>
+            <p>9:00 — 21:00 в будни;</p>
+            <p>с 10:00 — 18:00 в выходные.</p>
+        </div>
+        <div class="col-2">
+            <h5>Отдел доставки</h5>
+            <a href="#">+7 (495) 799-96-69</a>
+            <a href="#">+7 (812) 740-11-10</a>
+            <p>9:00 — 18:00 в будни;</p>
+        </div>
+        <div class="col-4">
+            <h5>Покупателям</h5>
+            <a href="#">Контакты</a>
+            <a href="#">Доставка</a>
+            <a href="#">Оплата</a>
+            <a href="#">Гарантия</a>
+            <a href="#">Возврат товара</a>
+            <a href="#">Услуги</a>
+            <a href="#">О компании</a>
+            <a href="#">Вакансии</a>
+            <a href="#">Карта сайта</a>
+            <a href="#">Аффилиатная программа</a>
+            <a href="#">Рекомендательные технологии</a>
+            <a href="#">Коллекции</a>
+        </div>
+    </div>
+    <div class="d-flex">
+        <div class="p-2 flex-fill">
+            <div class="footer-social-link">
+                <a href="#">
+                    <img src="pic/footer/icon-vk.svg">
+                </a>
+            </div>
+            <div class="footer-social-link">
+                <a href="#">
+                    <img src="pic/footer/icon-odnoklassniki.svg">
+                </a>
+            </div>
+            <div class="footer-social-link">
+                <a href="#">
+                    <img src="pic/footer/icon-youtube.svg">
+                </a>
+            </div>
+            <div class="footer-social-link">
+                <a href="#">
+                    <img src="pic/footer/icon-habr.svg" class="site_header__icon--default">
+                </a>
+            </div>
+            <div class="footer-social-link">
+                <a href="#">
+                    <img src="pic/footer/icon-dzen.svg" class="site_header__icon--default">
+                </a>
+            </div>
+            <div class="footer-social-link">
+                <a href="#">
+                    <img src="pic/footer/icon-telegram.svg" class="site_header__icon--default">
+                </a>
+            </div>
+        </div>
+        <div class="p-2 flex-fill">
+            <div class="footer-market-link">
+                <a href="#">
+                    <img src="pic/footer/app-store.svg" class="site_header__icon--default">
+                </a>
+            </div>
+            <div class="footer-market-link">
+                <a href="#">
+                    <img src="pic/footer/google-play.svg" class="site_header__icon--default">
+                </a>
+            </div>
+        </div>
+        <div class="p-2 flex-fill"></div>
+      </div>
+</footer>
+</body>
+    <script src="bootstrap-5.3.3/bootstrap.bundle.js"></script>
+</html>
