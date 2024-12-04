@@ -1,0 +1,411 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3{
+    font-weight: 700;
+}
+
+h6{
+    font-size: 12px;
+}
+
+.goods-navbar{
+    background-color: #ecf3f9;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: auto;
+    height: auto;   
+    -webkit-box-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 10px;
+    
+}
+
+.btn-link{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.justify-content-between{
+    .input-group{
+        background: #ecf3f9;
+        .form-control{
+            background-color: #ecf3f9;
+            color: #7ca4c5;
+            text-overflow: ellipsis;
+            border: 1px solid transparent;
+        }
+        width: 100%;
+    }
+
+}
+
+#citiesModal{
+    .input-group{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .modal-dialog{
+        max-width: 60%;
+    }
+
+   #listOfCities{
+
+    padding: 20px;
+    
+    .row{
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+    .col-4{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+   }
+}
+
+.btn-primary{
+    color: #fff;
+    border: 1px solid #0069ab;
+    background-color: #0069ab;
+    display: flex;
+    flex-direction: row;
+    width: 120px;
+    height: 44px;
+}
+
+.bg-body-tertiary{
+    background: none;
+}
+
+.col-sm-3{
+    display: flex;
+    flex-direction: row;
+}
+
+.col-sm-2{
+    display: flex;
+    flex-direction: row;
+}
+
+.col-sm-6{
+    display: flex;
+    flex-direction: row;
+}
+
+.header-catalog-menu{
+    background-color: #ecf3f9;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;  
+}
+
+.navbar-brand {
+    background-color: transparent;
+   
+}
+
+
+.carousel-control-next{
+    height: 44px;
+    width: 44px;
+    background-size: 20px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
+.carousel-control-next-icon{
+    background-image: url('pic/icons/right-hover.svg');
+    height: 44px;
+    width: 44px;
+    background-size: contain;
+}
+
+.carousel-control-prev{
+    height: 44px;
+    width: 44px;
+    background-size: 20px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon{
+    background-image: url('pic/icons/left-hover.svg');
+    height: 44px;
+    width: 44px;
+    background-size: contain;
+}
+
+.icon2{
+    width: 20px;
+    height: 20px;
+}
+
+
+.d-block w-100{
+    width: 800px ; 
+    height: 400px ;
+}
+
+h1 {
+    font-size: 12px;
+    font-family: Montserrat, sans-serif;
+    color: #000;
+}
+
+.carousel-item {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-deck {
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+
+.card-text{
+    text-align: center;
+}
+
+.nav-item{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.card-img-top{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;    
+    height: 33.33%; 
+    object-fit: contain;
+    border-radius: 0px; 
+}
+
+.carousel-item{
+    width: 100%;
+}
+
+.card-deck{
+    width: 100%;
+}
+
+.card-footer{
+    bottom: 0;
+    position: absolute; 
+    background: #fff;
+    border: #ddd;   
+}
+
+
+footer{
+    width: 100%;
+    background-color: #7ca4c5;
+    color: #ffffff;
+
+    h5{
+        margin-top: 20px;
+        font-weight: 700;
+    }
+    .row{
+        
+        --bs-gutter-x: -2.5rem;
+        flex-wrap: nowrap;
+    }
+
+    a{
+        margin-top: 2px;
+        margin-bottom: 2px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .col-2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-4{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    
+
+    p {
+        margin-bottom: 0;
+    }
+    
+    .flex-fill{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-left: 10px;
+
+        .footer-social-link{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color:#fff;
+            margin-right: 15px;
+
+            img{
+                width: 16px;
+                height: 16px;
+            }  
+
+        }
+
+        .footer-market-link{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            width: 90px;
+            height: 35px;
+            border-radius: 10px;
+            background-color:#fff;
+            margin-right: 15px;
+
+            img{
+                width: 95%;
+            }  
+        }
+    }
+}
+
+.floating-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #442a67;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img{
+        width: 40px;
+        height: 40px;
+    }  
+}
+
+    .tooltip-text {
+        background-color: #442a67;
+        height: 50px;
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 50%;
+        right: 100%;
+        transform: translateY(50%);
+        color: white; /* Цвет текста */
+        border-radius: 25px;
+        visibility: hidden;
+        opacity: 0; /* Начальная непрозрачность */
+        transition: all .2s ease-in-out; /* Переход для видимости и непрозрачности */
+    }
+
+    .floating-button:hover .tooltip-text {
+        visibility: visible; /* Показать текст при наведении */
+        opacity: 1; /* Сделать текст видимым */
+    }
+
+.main{
+
+    h5{
+        margin-left: 10px;
+    }
+
+
+    .form-control{
+        background-color: white;
+    }  
+
+    .mini_container{
+        padding-top: 20px;
+    }
+
+    .text-center {
+        text-align: center !important;
+    }
+    
+    #filtration{
+        .container{
+                background-color: #7ca4c5;
+        }
+    }
+}
+
+
+#button-container{
+    .col-4{
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+#price_container{
+    
+    .input-group{
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .input-group-text{
+        width: 50px;
+    }
+}
+
+#category_container{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#goods_table{
+    padding-top: 20px;
+}
+
+#signIn{
+    padding-right: 100px;
+    padding-left: 100px;
+
+    .input-group-text{
+        width: 100px;
+    }
+}
